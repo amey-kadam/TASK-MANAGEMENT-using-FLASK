@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Update Task{% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='update_task.css') }}">
+
+<div class="update-task-page">
+  <h2>Update Task</h2>
+  <form action="{{ url_for('update_task', id=task.id) }}" method="POST">
+    <!-- Removed csrf_token input -->
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title" value="{{ task.title }}" required>
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea id="description" name="description">{{ task.description }}</textarea>
+    </div>
+    <button type="submit" class="update-button">Update Task</button>
+  </form>
+</div>
+{% endblock %}

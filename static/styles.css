@@ -1,0 +1,170 @@
+.button-container {
+  display: flex;
+  padding: 4%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem; 
+}
+
+.cdh1{
+  text-align: center;
+  font-size: 25px;
+  margin-top: 7%;
+}
+
+.get-started-button {
+  background-color: #2196f3; /* Blue background */
+  color: #fff; /* White text */
+  padding: 0.75rem 2rem; /* Increase padding for better button size */
+  border: none;
+  border-radius: 5px; /* Round corners */
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  text-decoration: none; /* Remove underline from link */
+  font-weight: bold; /* Bold text */
+}
+
+.get-started-button:hover {
+  background-color: #0d6efd; /* Darker blue on hover */
+}
+
+
+/* Header */
+header {
+  background-color: #fff;
+  display: flex; /* Allow for responsive layout */
+  justify-content: space-between; /* Space navigation bar to the left */
+}
+
+body {
+  margin: 0; /* Remove default margin from the body element */
+  padding: 0; /* Remove default padding from the body element */
+}
+
+.navigation {
+  height: 50px; /* Adjust the height of the bar as desired */
+  background-color: #46a3f0; /* Set the background color to black */
+  width: 100%; /* Make the bar span the entire width of the page */
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+ 
+}
+
+.navigation a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1rem 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.navigation a:hover {
+  color: #b0a7a7;
+}
+
+/* Responsive Navigation (Media Query) */
+@media (max-width: 768px) {
+  .navigation {
+    display: none; 
+  }
+}
+
+.horizontal-list {
+  display: flex; 
+  justify-content: center; 
+}
+
+.horizontal-list a {
+  color: #2196f3;
+  text-decoration: none; 
+  margin-right: 1rem; 
+  font-weight: bold; 
+  transition: color 0.2s ease-in-out; 
+}
+
+.horizontal-list a:hover {
+  color: #0d6efd; 
+}
+
+
+form {
+  display: flex; 
+  flex-direction: column; 
+  width: 300px; 
+  margin: 0 auto;
+  padding: 2rem; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+}
+
+form label {
+  margin-bottom: 0.5rem; 
+  display: block; 
+}
+
+form input[type="text"],
+form input[type="password"] {
+  padding: 0.5rem; 
+  border: 1px solid #ccc; /* Add a thin border to input fields */
+  border-radius: 3px; /* Rounded corners for input fields */
+  width: 100%; /* Make input fields fill the available space */
+  margin-bottom: 1rem; /* Add some space below input fields */
+}
+
+form input[type="submit"] {
+  background-color: #2196f3; /* Blue background for submit button */
+  color: #fff; /* White text for submit button */
+  padding: 0.75rem 1rem; /* Add some padding to submit button */
+  border: none; /* Remove border from submit button */
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.2s ease-in-out; 
+}
+
+form input[type="submit"]:hover {
+  background-color: #0d6efd; /* Darker blue on hover */
+}
+
+form .error {
+  color: red; /* Red color for error messages */
+  font-size: smaller; /* Reduce font size for error messages */
+  margin-bottom: 1rem; /* Add some space below error messages */
+}
+
+.login-form h2 {
+  text-align: center;
+}
+
+.register-form h2 {
+  text-align: center; 
+}
+
+
+.tasks-page h2 {
+  text-align: center;
+}
+
+.tskbtn {
+  display: flex; 
+  justify-content: space-between;
+}
+
+.task-button {
+  background-color: #2196f3; 
+  color: white;
+  padding: 6px 15px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer; 
+  margin-right: 6px;
+}
+
+
+.task-button:hover{
+  background-color: #10087d;
+}
+
+

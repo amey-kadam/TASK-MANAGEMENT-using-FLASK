@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Tasks{% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='tasks.css') }}">
+
+<div class="tasks-page">
+  <h2>Your Tasks</h2>
+  <form method="POST" action="{{ url_for('tasks') }}">
+    <div>
+      <label for="title">Title:</label><br>
+      <input type="text" id="title" name="title" required>
+    </div>
+    <div>
+      <label for="description">Description:</label><br>
+      <input type="text" id="description" name="description">
+    </div>
+    <div class="tskbtn">
+      <button type="submit" class="task-button">Add Task</button>
+      <a href="{{ url_for('show_tasks') }}" class="task-button">Show Tasks</a>
+    </div>
+  </form>
+</div>
+{% endblock %}

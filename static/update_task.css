@@ -1,0 +1,72 @@
+/* update_task.css */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Update Task Page Styling */
+.update-task-page {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1.5px solid #000000;
+    border-radius: 8px;
+    text-align: center; /* Center align text */
+}
+
+.update-task-page h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: calc(100% - 20px); /* Adjust width to leave space for padding */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+textarea {
+    height: 150px; /* Set a fixed height for textarea */
+}
+
+.update-button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+    width: 120px;
+    margin-top: 10px;
+}
+
+.update-button:hover {
+    background-color: #e7c857;
+}
